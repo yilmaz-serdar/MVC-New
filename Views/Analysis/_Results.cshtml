@@ -1,0 +1,61 @@
+@model AnalysisResult
+@{
+    var topology = Model.Topology;
+    var culture = CultureInfo.GetCultureInfo("tr-TR");
+    var callTypes = topology.Edges.Select(edge => edge.CallType).Distinct().OrderBy(type => type).ToArray();
+    var labels = topology.Nodes.ToDictionary(node => node.Id, node => node.Label);
+}
+<section class="results" aria-label="Analiz sonuçları">
+    <div class="results-heading">
+        <div><span class="success-mark">✓</span><h2>Analiz sonuçları</h2><span class="result-service" title="@Model.ServiceName">@Model.ServiceName</span></div>
+        <span class="date-range">İstenen aralık: @Model.From.ToString("dd MMM HH:mm", culture) – @Model.To.ToString("dd MMM HH:mm", culture) UTC</span>
+    </div>
+    <div class="summary-strip">
+        <div><strong>@topology.Dependencies.Count</strong><span>Bağımlı proje</span></div>
+        <div><strong>@topology.Nodes.Count</strong><span>Toplam servis</span></div>
+        <div><strong>@topology.Edges.Count</strong><span>Servis bağlantısı</span></div>
+        <div><strong>@callTypes.Length</strong><span>Çağrı tipi</span></div>
+    </div>
+    <div class="panels">
+        <aside class="projects-panel panel">
+            <div class="panel-title"><h3>Bağımlı projeler</h3><span class="count-badge">@topology.Dependencies.Count</span></div>
+            <p class="panel-description">Servisin bağlantılı olduğu projeler</p>
+            <ul class="dependency-list">
+                @foreach (var dependency in topology.Dependencies)
+                {
+                    <li><span class="project-icon" aria-hidden="true">◇</span><strong>@dependency</strong></li>
+                }
+            </ul>
+            @if (topology.Dependencies.Count == 0) { <p class="project-tip">Bağımlı proje bulunamadı.</p> }
+            <div class="project-tip"><p>Proje–servis eşleştirmesi yanıtta belirtilmemiştir.</p></div>
+        </aside>
+        <section class="topology-panel panel" aria-labelledby="topology-heading">
+            <div class="topology-header"><div><div class="panel-title"><h3 id="topology-heading">Servis topolojisi</h3></div><p class="panel-description">Çağırdığı servisleri ve çağrı tiplerini açmak için bir servise tıklayın.</p></div><span class="live-badge"><span></span>Son @Model.Days gün</span></div>
+            <div class="graph-legend call-type-legend">
+                @foreach (var type in callTypes) { <span data-call-type="@type"><i></i>@type</span> }
+            </div>
+            @if (topology.Nodes.Count == 0)
+            {
+                <div class="empty-state"><h2>Bu zaman aralığında servis bulunamadı.</h2><p>Servis adını veya analiz süresini değiştirerek tekrar deneyin.</p></div>
+            }
+            else
+            {
+                <script type="application/json" id="topology-data">@Json.Serialize(topology)</script>
+                <div id="cy-topology" data-service-name="@Model.ServiceName" role="region" tabindex="0" aria-label="Servis topolojisi. Yakınlaştırmak için artı/eksi, kaydırmak için ok tuşlarını kullanın. Metin görünümü aşağıdadır."></div>
+                <p id="graph-error" class="error" role="alert" hidden></p>
+                <div class="graph-footer"><span>Bir servis veya bağlantı seçin</span><div class="zoom-controls"><button type="button" data-zoom="out" aria-label="Uzaklaştır">−</button><span>100%</span><button type="button" data-zoom="in" aria-label="Yakınlaştır">+</button><i></i><button type="button" data-zoom="fit" aria-label="Haritayı ekrana sığdır">⛶</button></div></div>
+                <div class="graph-selection" hidden aria-live="polite"><div><strong></strong><p></p></div><button type="button" aria-label="Seçimi temizle">×</button></div>
+                <noscript><p class="project-tip">Grafik için JavaScript gerekir. Tüm bağlantılar aşağıdaki metin görünümünde yer alır.</p></noscript>
+                <details class="connection-table"><summary>Bağlantıları metin olarak göster (@topology.Edges.Count)</summary>
+                    @if (topology.Edges.Count == 0) { <p>Servisler arasında bağlantı bulunamadı.</p> }
+                    <div class="table-scroll"><table><thead><tr><th>Çağıran servis</th><th>Çağrılan servis</th><th>Çağrı tipi</th></tr></thead><tbody>
+                        @foreach (var edge in topology.Edges)
+                        {
+                            <tr><td>@labels[edge.Source]</td><td>@labels[edge.Target]</td><td>@edge.CallType</td></tr>
+                        }
+                    </tbody></table></div>
+                </details>
+            }
+        </section>
+    </div>
+</section>

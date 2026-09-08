@@ -1,0 +1,1103 @@
+{
+  "nodes": [
+    {
+      "id": "ACQUIRER_PROCESS_REST_001",
+      "label": "ACQUIRER_PROCESS_REST_001"
+    },
+    {
+      "id": "CARD_VALIDATION_SERVICE_002",
+      "label": "CARD_VALIDATION_SERVICE_002"
+    },
+    {
+      "id": "EFT_DETAIL_CORE_003",
+      "label": "EFT_DETAIL_CORE_003"
+    },
+    {
+      "id": "DEPOSIT_STATUS_SOAP_004",
+      "label": "DEPOSIT_STATUS_SOAP_004"
+    },
+    {
+      "id": "CUSTOMER_QUERY_API_005",
+      "label": "CUSTOMER_QUERY_API_005"
+    },
+    {
+      "id": "PAYMENT_TRANSFER_REST_006",
+      "label": "PAYMENT_TRANSFER_REST_006"
+    },
+    {
+      "id": "MERCHANT_TRANSACTION_SERVICE_007",
+      "label": "MERCHANT_TRANSACTION_SERVICE_007"
+    },
+    {
+      "id": "ATM_INFO_CORE_008",
+      "label": "ATM_INFO_CORE_008"
+    },
+    {
+      "id": "MOBILE_MANAGEMENT_SOAP_009",
+      "label": "MOBILE_MANAGEMENT_SOAP_009"
+    },
+    {
+      "id": "INTERNET_CONTROL_API_010",
+      "label": "INTERNET_CONTROL_API_010"
+    },
+    {
+      "id": "FRAUD_PROCESS_REST_011",
+      "label": "FRAUD_PROCESS_REST_011"
+    },
+    {
+      "id": "LIMIT_VALIDATION_SERVICE_012",
+      "label": "LIMIT_VALIDATION_SERVICE_012"
+    },
+    {
+      "id": "AUTH_DETAIL_CORE_013",
+      "label": "AUTH_DETAIL_CORE_013"
+    },
+    {
+      "id": "NOTIFICATION_STATUS_SOAP_014",
+      "label": "NOTIFICATION_STATUS_SOAP_014"
+    },
+    {
+      "id": "ACCOUNT_QUERY_API_015",
+      "label": "ACCOUNT_QUERY_API_015"
+    },
+    {
+      "id": "LOAN_TRANSFER_REST_016",
+      "label": "LOAN_TRANSFER_REST_016"
+    },
+    {
+      "id": "CAMPAIGN_TRANSACTION_SERVICE_017",
+      "label": "CAMPAIGN_TRANSACTION_SERVICE_017"
+    },
+    {
+      "id": "REWARD_INFO_CORE_018",
+      "label": "REWARD_INFO_CORE_018"
+    },
+    {
+      "id": "SECURITY_MANAGEMENT_SOAP_019",
+      "label": "SECURITY_MANAGEMENT_SOAP_019"
+    },
+    {
+      "id": "REPORT_CONTROL_API_020",
+      "label": "REPORT_CONTROL_API_020"
+    },
+    {
+      "id": "ACQUIRER_PROCESS_REST_021",
+      "label": "ACQUIRER_PROCESS_REST_021"
+    },
+    {
+      "id": "CARD_VALIDATION_SERVICE_022",
+      "label": "CARD_VALIDATION_SERVICE_022"
+    },
+    {
+      "id": "EFT_DETAIL_CORE_023",
+      "label": "EFT_DETAIL_CORE_023"
+    },
+    {
+      "id": "DEPOSIT_STATUS_SOAP_024",
+      "label": "DEPOSIT_STATUS_SOAP_024"
+    },
+    {
+      "id": "CUSTOMER_QUERY_API_025",
+      "label": "CUSTOMER_QUERY_API_025"
+    },
+    {
+      "id": "PAYMENT_TRANSFER_REST_026",
+      "label": "PAYMENT_TRANSFER_REST_026"
+    },
+    {
+      "id": "MERCHANT_TRANSACTION_SERVICE_027",
+      "label": "MERCHANT_TRANSACTION_SERVICE_027"
+    },
+    {
+      "id": "ATM_INFO_CORE_028",
+      "label": "ATM_INFO_CORE_028"
+    },
+    {
+      "id": "MOBILE_MANAGEMENT_SOAP_029",
+      "label": "MOBILE_MANAGEMENT_SOAP_029"
+    },
+    {
+      "id": "INTERNET_CONTROL_API_030",
+      "label": "INTERNET_CONTROL_API_030"
+    },
+    {
+      "id": "FRAUD_PROCESS_REST_031",
+      "label": "FRAUD_PROCESS_REST_031"
+    },
+    {
+      "id": "LIMIT_VALIDATION_SERVICE_032",
+      "label": "LIMIT_VALIDATION_SERVICE_032"
+    },
+    {
+      "id": "AUTH_DETAIL_CORE_033",
+      "label": "AUTH_DETAIL_CORE_033"
+    },
+    {
+      "id": "NOTIFICATION_STATUS_SOAP_034",
+      "label": "NOTIFICATION_STATUS_SOAP_034"
+    },
+    {
+      "id": "ACCOUNT_QUERY_API_035",
+      "label": "ACCOUNT_QUERY_API_035"
+    },
+    {
+      "id": "LOAN_TRANSFER_REST_036",
+      "label": "LOAN_TRANSFER_REST_036"
+    },
+    {
+      "id": "CAMPAIGN_TRANSACTION_SERVICE_037",
+      "label": "CAMPAIGN_TRANSACTION_SERVICE_037"
+    },
+    {
+      "id": "REWARD_INFO_CORE_038",
+      "label": "REWARD_INFO_CORE_038"
+    },
+    {
+      "id": "SECURITY_MANAGEMENT_SOAP_039",
+      "label": "SECURITY_MANAGEMENT_SOAP_039"
+    },
+    {
+      "id": "REPORT_CONTROL_API_040",
+      "label": "REPORT_CONTROL_API_040"
+    },
+    {
+      "id": "ACQUIRER_PROCESS_REST_041",
+      "label": "ACQUIRER_PROCESS_REST_041"
+    },
+    {
+      "id": "CARD_VALIDATION_SERVICE_042",
+      "label": "CARD_VALIDATION_SERVICE_042"
+    },
+    {
+      "id": "EFT_DETAIL_CORE_043",
+      "label": "EFT_DETAIL_CORE_043"
+    },
+    {
+      "id": "DEPOSIT_STATUS_SOAP_044",
+      "label": "DEPOSIT_STATUS_SOAP_044"
+    },
+    {
+      "id": "CUSTOMER_QUERY_API_045",
+      "label": "CUSTOMER_QUERY_API_045"
+    },
+    {
+      "id": "PAYMENT_TRANSFER_REST_046",
+      "label": "PAYMENT_TRANSFER_REST_046"
+    },
+    {
+      "id": "MERCHANT_TRANSACTION_SERVICE_047",
+      "label": "MERCHANT_TRANSACTION_SERVICE_047"
+    },
+    {
+      "id": "ATM_INFO_CORE_048",
+      "label": "ATM_INFO_CORE_048"
+    },
+    {
+      "id": "MOBILE_MANAGEMENT_SOAP_049",
+      "label": "MOBILE_MANAGEMENT_SOAP_049"
+    },
+    {
+      "id": "INTERNET_CONTROL_API_050",
+      "label": "INTERNET_CONTROL_API_050"
+    },
+    {
+      "id": "FRAUD_PROCESS_REST_051",
+      "label": "FRAUD_PROCESS_REST_051"
+    },
+    {
+      "id": "LIMIT_VALIDATION_SERVICE_052",
+      "label": "LIMIT_VALIDATION_SERVICE_052"
+    },
+    {
+      "id": "AUTH_DETAIL_CORE_053",
+      "label": "AUTH_DETAIL_CORE_053"
+    },
+    {
+      "id": "NOTIFICATION_STATUS_SOAP_054",
+      "label": "NOTIFICATION_STATUS_SOAP_054"
+    },
+    {
+      "id": "ACCOUNT_QUERY_API_055",
+      "label": "ACCOUNT_QUERY_API_055"
+    },
+    {
+      "id": "LOAN_TRANSFER_REST_056",
+      "label": "LOAN_TRANSFER_REST_056"
+    },
+    {
+      "id": "CAMPAIGN_TRANSACTION_SERVICE_057",
+      "label": "CAMPAIGN_TRANSACTION_SERVICE_057"
+    },
+    {
+      "id": "REWARD_INFO_CORE_058",
+      "label": "REWARD_INFO_CORE_058"
+    },
+    {
+      "id": "SECURITY_MANAGEMENT_SOAP_059",
+      "label": "SECURITY_MANAGEMENT_SOAP_059"
+    },
+    {
+      "id": "REPORT_CONTROL_API_060",
+      "label": "REPORT_CONTROL_API_060"
+    },
+    {
+      "id": "ACQUIRER_PROCESS_REST_061",
+      "label": "ACQUIRER_PROCESS_REST_061"
+    },
+    {
+      "id": "CARD_VALIDATION_SERVICE_062",
+      "label": "CARD_VALIDATION_SERVICE_062"
+    },
+    {
+      "id": "EFT_DETAIL_CORE_063",
+      "label": "EFT_DETAIL_CORE_063"
+    },
+    {
+      "id": "DEPOSIT_STATUS_SOAP_064",
+      "label": "DEPOSIT_STATUS_SOAP_064"
+    },
+    {
+      "id": "CUSTOMER_QUERY_API_065",
+      "label": "CUSTOMER_QUERY_API_065"
+    },
+    {
+      "id": "PAYMENT_TRANSFER_REST_066",
+      "label": "PAYMENT_TRANSFER_REST_066"
+    },
+    {
+      "id": "MERCHANT_TRANSACTION_SERVICE_067",
+      "label": "MERCHANT_TRANSACTION_SERVICE_067"
+    },
+    {
+      "id": "ATM_INFO_CORE_068",
+      "label": "ATM_INFO_CORE_068"
+    },
+    {
+      "id": "MOBILE_MANAGEMENT_SOAP_069",
+      "label": "MOBILE_MANAGEMENT_SOAP_069"
+    },
+    {
+      "id": "INTERNET_CONTROL_API_070",
+      "label": "INTERNET_CONTROL_API_070"
+    },
+    {
+      "id": "FRAUD_PROCESS_REST_071",
+      "label": "FRAUD_PROCESS_REST_071"
+    },
+    {
+      "id": "LIMIT_VALIDATION_SERVICE_072",
+      "label": "LIMIT_VALIDATION_SERVICE_072"
+    },
+    {
+      "id": "AUTH_DETAIL_CORE_073",
+      "label": "AUTH_DETAIL_CORE_073"
+    },
+    {
+      "id": "NOTIFICATION_STATUS_SOAP_074",
+      "label": "NOTIFICATION_STATUS_SOAP_074"
+    },
+    {
+      "id": "ACCOUNT_QUERY_API_075",
+      "label": "ACCOUNT_QUERY_API_075"
+    },
+    {
+      "id": "LOAN_TRANSFER_REST_076",
+      "label": "LOAN_TRANSFER_REST_076"
+    },
+    {
+      "id": "CAMPAIGN_TRANSACTION_SERVICE_077",
+      "label": "CAMPAIGN_TRANSACTION_SERVICE_077"
+    },
+    {
+      "id": "REWARD_INFO_CORE_078",
+      "label": "REWARD_INFO_CORE_078"
+    },
+    {
+      "id": "SECURITY_MANAGEMENT_SOAP_079",
+      "label": "SECURITY_MANAGEMENT_SOAP_079"
+    },
+    {
+      "id": "REPORT_CONTROL_API_080",
+      "label": "REPORT_CONTROL_API_080"
+    },
+    {
+      "id": "ACQUIRER_PROCESS_REST_081",
+      "label": "ACQUIRER_PROCESS_REST_081"
+    },
+    {
+      "id": "CARD_VALIDATION_SERVICE_082",
+      "label": "CARD_VALIDATION_SERVICE_082"
+    },
+    {
+      "id": "EFT_DETAIL_CORE_083",
+      "label": "EFT_DETAIL_CORE_083"
+    },
+    {
+      "id": "DEPOSIT_STATUS_SOAP_084",
+      "label": "DEPOSIT_STATUS_SOAP_084"
+    },
+    {
+      "id": "CUSTOMER_QUERY_API_085",
+      "label": "CUSTOMER_QUERY_API_085"
+    },
+    {
+      "id": "PAYMENT_TRANSFER_REST_086",
+      "label": "PAYMENT_TRANSFER_REST_086"
+    },
+    {
+      "id": "MERCHANT_TRANSACTION_SERVICE_087",
+      "label": "MERCHANT_TRANSACTION_SERVICE_087"
+    },
+    {
+      "id": "ATM_INFO_CORE_088",
+      "label": "ATM_INFO_CORE_088"
+    },
+    {
+      "id": "MOBILE_MANAGEMENT_SOAP_089",
+      "label": "MOBILE_MANAGEMENT_SOAP_089"
+    },
+    {
+      "id": "INTERNET_CONTROL_API_090",
+      "label": "INTERNET_CONTROL_API_090"
+    },
+    {
+      "id": "FRAUD_PROCESS_REST_091",
+      "label": "FRAUD_PROCESS_REST_091"
+    },
+    {
+      "id": "LIMIT_VALIDATION_SERVICE_092",
+      "label": "LIMIT_VALIDATION_SERVICE_092"
+    },
+    {
+      "id": "AUTH_DETAIL_CORE_093",
+      "label": "AUTH_DETAIL_CORE_093"
+    },
+    {
+      "id": "NOTIFICATION_STATUS_SOAP_094",
+      "label": "NOTIFICATION_STATUS_SOAP_094"
+    },
+    {
+      "id": "ACCOUNT_QUERY_API_095",
+      "label": "ACCOUNT_QUERY_API_095"
+    },
+    {
+      "id": "LOAN_TRANSFER_REST_096",
+      "label": "LOAN_TRANSFER_REST_096"
+    },
+    {
+      "id": "CAMPAIGN_TRANSACTION_SERVICE_097",
+      "label": "CAMPAIGN_TRANSACTION_SERVICE_097"
+    },
+    {
+      "id": "REWARD_INFO_CORE_098",
+      "label": "REWARD_INFO_CORE_098"
+    },
+    {
+      "id": "SECURITY_MANAGEMENT_SOAP_099",
+      "label": "SECURITY_MANAGEMENT_SOAP_099"
+    },
+    {
+      "id": "REPORT_CONTROL_API_100",
+      "label": "REPORT_CONTROL_API_100"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ACQUIRER_PROCESS_REST_001",
+      "target": "CARD_VALIDATION_SERVICE_002",
+      "callType": "REST"
+    },
+    {
+      "source": "CARD_VALIDATION_SERVICE_002",
+      "target": "EFT_DETAIL_CORE_003",
+      "callType": "SOAP"
+    },
+    {
+      "source": "ACQUIRER_PROCESS_REST_001",
+      "target": "DEPOSIT_STATUS_SOAP_004",
+      "callType": "SOAP"
+    },
+    {
+      "source": "ACQUIRER_PROCESS_REST_001",
+      "target": "CUSTOMER_QUERY_API_005",
+      "callType": "gRPC"
+    },
+    {
+      "source": "ACQUIRER_PROCESS_REST_001",
+      "target": "PAYMENT_TRANSFER_REST_006",
+      "callType": "gRPC"
+    },
+    {
+      "source": "DEPOSIT_STATUS_SOAP_004",
+      "target": "MERCHANT_TRANSACTION_SERVICE_007",
+      "callType": "REST"
+    },
+    {
+      "source": "ACQUIRER_PROCESS_REST_001",
+      "target": "ATM_INFO_CORE_008",
+      "callType": "REST"
+    },
+    {
+      "source": "DEPOSIT_STATUS_SOAP_004",
+      "target": "MOBILE_MANAGEMENT_SOAP_009",
+      "callType": "SOAP"
+    },
+    {
+      "source": "CARD_VALIDATION_SERVICE_002",
+      "target": "INTERNET_CONTROL_API_010",
+      "callType": "gRPC"
+    },
+    {
+      "source": "PAYMENT_TRANSFER_REST_006",
+      "target": "FRAUD_PROCESS_REST_011",
+      "callType": "gRPC"
+    },
+    {
+      "source": "INTERNET_CONTROL_API_010",
+      "target": "LIMIT_VALIDATION_SERVICE_012",
+      "callType": "SOAP"
+    },
+    {
+      "source": "LIMIT_VALIDATION_SERVICE_012",
+      "target": "AUTH_DETAIL_CORE_013",
+      "callType": "gRPC"
+    },
+    {
+      "source": "INTERNET_CONTROL_API_010",
+      "target": "NOTIFICATION_STATUS_SOAP_014",
+      "callType": "REST"
+    },
+    {
+      "source": "MOBILE_MANAGEMENT_SOAP_009",
+      "target": "ACCOUNT_QUERY_API_015",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "AUTH_DETAIL_CORE_013",
+      "target": "LOAN_TRANSFER_REST_016",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "FRAUD_PROCESS_REST_011",
+      "target": "CAMPAIGN_TRANSACTION_SERVICE_017",
+      "callType": "SOAP"
+    },
+    {
+      "source": "ACCOUNT_QUERY_API_015",
+      "target": "REWARD_INFO_CORE_018",
+      "callType": "REST"
+    },
+    {
+      "source": "LIMIT_VALIDATION_SERVICE_012",
+      "target": "SECURITY_MANAGEMENT_SOAP_019",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "AUTH_DETAIL_CORE_013",
+      "target": "REPORT_CONTROL_API_020",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "REWARD_INFO_CORE_018",
+      "target": "ACQUIRER_PROCESS_REST_021",
+      "callType": "gRPC"
+    },
+    {
+      "source": "REWARD_INFO_CORE_018",
+      "target": "CARD_VALIDATION_SERVICE_022",
+      "callType": "REST"
+    },
+    {
+      "source": "CARD_VALIDATION_SERVICE_022",
+      "target": "EFT_DETAIL_CORE_023",
+      "callType": "gRPC"
+    },
+    {
+      "source": "CAMPAIGN_TRANSACTION_SERVICE_017",
+      "target": "DEPOSIT_STATUS_SOAP_024",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "REWARD_INFO_CORE_018",
+      "target": "CUSTOMER_QUERY_API_025",
+      "callType": "gRPC"
+    },
+    {
+      "source": "CARD_VALIDATION_SERVICE_022",
+      "target": "PAYMENT_TRANSFER_REST_026",
+      "callType": "gRPC"
+    },
+    {
+      "source": "DEPOSIT_STATUS_SOAP_024",
+      "target": "MERCHANT_TRANSACTION_SERVICE_027",
+      "callType": "gRPC"
+    },
+    {
+      "source": "EFT_DETAIL_CORE_023",
+      "target": "ATM_INFO_CORE_028",
+      "callType": "REST"
+    },
+    {
+      "source": "ACQUIRER_PROCESS_REST_021",
+      "target": "MOBILE_MANAGEMENT_SOAP_029",
+      "callType": "SOAP"
+    },
+    {
+      "source": "PAYMENT_TRANSFER_REST_026",
+      "target": "INTERNET_CONTROL_API_030",
+      "callType": "REST"
+    },
+    {
+      "source": "PAYMENT_TRANSFER_REST_026",
+      "target": "FRAUD_PROCESS_REST_031",
+      "callType": "REST"
+    },
+    {
+      "source": "INTERNET_CONTROL_API_030",
+      "target": "LIMIT_VALIDATION_SERVICE_032",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "LIMIT_VALIDATION_SERVICE_032",
+      "target": "AUTH_DETAIL_CORE_033",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "ATM_INFO_CORE_028",
+      "target": "NOTIFICATION_STATUS_SOAP_034",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "LIMIT_VALIDATION_SERVICE_032",
+      "target": "ACCOUNT_QUERY_API_035",
+      "callType": "SOAP"
+    },
+    {
+      "source": "LIMIT_VALIDATION_SERVICE_032",
+      "target": "LOAN_TRANSFER_REST_036",
+      "callType": "REST"
+    },
+    {
+      "source": "FRAUD_PROCESS_REST_031",
+      "target": "CAMPAIGN_TRANSACTION_SERVICE_037",
+      "callType": "gRPC"
+    },
+    {
+      "source": "AUTH_DETAIL_CORE_033",
+      "target": "REWARD_INFO_CORE_038",
+      "callType": "SOAP"
+    },
+    {
+      "source": "REWARD_INFO_CORE_038",
+      "target": "SECURITY_MANAGEMENT_SOAP_039",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "LOAN_TRANSFER_REST_036",
+      "target": "REPORT_CONTROL_API_040",
+      "callType": "gRPC"
+    },
+    {
+      "source": "LOAN_TRANSFER_REST_036",
+      "target": "ACQUIRER_PROCESS_REST_041",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "NOTIFICATION_STATUS_SOAP_034",
+      "target": "CARD_VALIDATION_SERVICE_042",
+      "callType": "SOAP"
+    },
+    {
+      "source": "ACCOUNT_QUERY_API_035",
+      "target": "EFT_DETAIL_CORE_043",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "CARD_VALIDATION_SERVICE_042",
+      "target": "DEPOSIT_STATUS_SOAP_044",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "REWARD_INFO_CORE_038",
+      "target": "CUSTOMER_QUERY_API_045",
+      "callType": "SOAP"
+    },
+    {
+      "source": "EFT_DETAIL_CORE_043",
+      "target": "PAYMENT_TRANSFER_REST_046",
+      "callType": "SOAP"
+    },
+    {
+      "source": "PAYMENT_TRANSFER_REST_046",
+      "target": "MERCHANT_TRANSACTION_SERVICE_047",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "MERCHANT_TRANSACTION_SERVICE_047",
+      "target": "ATM_INFO_CORE_048",
+      "callType": "SOAP"
+    },
+    {
+      "source": "CUSTOMER_QUERY_API_045",
+      "target": "MOBILE_MANAGEMENT_SOAP_049",
+      "callType": "SOAP"
+    },
+    {
+      "source": "CUSTOMER_QUERY_API_045",
+      "target": "INTERNET_CONTROL_API_050",
+      "callType": "gRPC"
+    },
+    {
+      "source": "MERCHANT_TRANSACTION_SERVICE_047",
+      "target": "FRAUD_PROCESS_REST_051",
+      "callType": "gRPC"
+    },
+    {
+      "source": "INTERNET_CONTROL_API_050",
+      "target": "LIMIT_VALIDATION_SERVICE_052",
+      "callType": "gRPC"
+    },
+    {
+      "source": "FRAUD_PROCESS_REST_051",
+      "target": "AUTH_DETAIL_CORE_053",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "MOBILE_MANAGEMENT_SOAP_049",
+      "target": "NOTIFICATION_STATUS_SOAP_054",
+      "callType": "SOAP"
+    },
+    {
+      "source": "NOTIFICATION_STATUS_SOAP_054",
+      "target": "ACCOUNT_QUERY_API_055",
+      "callType": "REST"
+    },
+    {
+      "source": "ATM_INFO_CORE_048",
+      "target": "LOAN_TRANSFER_REST_056",
+      "callType": "REST"
+    },
+    {
+      "source": "FRAUD_PROCESS_REST_051",
+      "target": "CAMPAIGN_TRANSACTION_SERVICE_057",
+      "callType": "SOAP"
+    },
+    {
+      "source": "LOAN_TRANSFER_REST_056",
+      "target": "REWARD_INFO_CORE_058",
+      "callType": "gRPC"
+    },
+    {
+      "source": "LIMIT_VALIDATION_SERVICE_052",
+      "target": "SECURITY_MANAGEMENT_SOAP_059",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "REWARD_INFO_CORE_058",
+      "target": "REPORT_CONTROL_API_060",
+      "callType": "gRPC"
+    },
+    {
+      "source": "REPORT_CONTROL_API_060",
+      "target": "ACQUIRER_PROCESS_REST_061",
+      "callType": "gRPC"
+    },
+    {
+      "source": "REWARD_INFO_CORE_058",
+      "target": "CARD_VALIDATION_SERVICE_062",
+      "callType": "gRPC"
+    },
+    {
+      "source": "ACCOUNT_QUERY_API_055",
+      "target": "EFT_DETAIL_CORE_063",
+      "callType": "REST"
+    },
+    {
+      "source": "REPORT_CONTROL_API_060",
+      "target": "DEPOSIT_STATUS_SOAP_064",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "REWARD_INFO_CORE_058",
+      "target": "CUSTOMER_QUERY_API_065",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "DEPOSIT_STATUS_SOAP_064",
+      "target": "PAYMENT_TRANSFER_REST_066",
+      "callType": "SOAP"
+    },
+    {
+      "source": "PAYMENT_TRANSFER_REST_066",
+      "target": "MERCHANT_TRANSACTION_SERVICE_067",
+      "callType": "REST"
+    },
+    {
+      "source": "DEPOSIT_STATUS_SOAP_064",
+      "target": "ATM_INFO_CORE_068",
+      "callType": "gRPC"
+    },
+    {
+      "source": "EFT_DETAIL_CORE_063",
+      "target": "MOBILE_MANAGEMENT_SOAP_069",
+      "callType": "gRPC"
+    },
+    {
+      "source": "EFT_DETAIL_CORE_063",
+      "target": "INTERNET_CONTROL_API_070",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "PAYMENT_TRANSFER_REST_066",
+      "target": "FRAUD_PROCESS_REST_071",
+      "callType": "SOAP"
+    },
+    {
+      "source": "MOBILE_MANAGEMENT_SOAP_069",
+      "target": "LIMIT_VALIDATION_SERVICE_072",
+      "callType": "SOAP"
+    },
+    {
+      "source": "CUSTOMER_QUERY_API_065",
+      "target": "AUTH_DETAIL_CORE_073",
+      "callType": "gRPC"
+    },
+    {
+      "source": "FRAUD_PROCESS_REST_071",
+      "target": "NOTIFICATION_STATUS_SOAP_074",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "MERCHANT_TRANSACTION_SERVICE_067",
+      "target": "ACCOUNT_QUERY_API_075",
+      "callType": "REST"
+    },
+    {
+      "source": "AUTH_DETAIL_CORE_073",
+      "target": "LOAN_TRANSFER_REST_076",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "LIMIT_VALIDATION_SERVICE_072",
+      "target": "CAMPAIGN_TRANSACTION_SERVICE_077",
+      "callType": "REST"
+    },
+    {
+      "source": "AUTH_DETAIL_CORE_073",
+      "target": "REWARD_INFO_CORE_078",
+      "callType": "gRPC"
+    },
+    {
+      "source": "LIMIT_VALIDATION_SERVICE_072",
+      "target": "SECURITY_MANAGEMENT_SOAP_079",
+      "callType": "REST"
+    },
+    {
+      "source": "SECURITY_MANAGEMENT_SOAP_079",
+      "target": "REPORT_CONTROL_API_080",
+      "callType": "REST"
+    },
+    {
+      "source": "ACCOUNT_QUERY_API_075",
+      "target": "ACQUIRER_PROCESS_REST_081",
+      "callType": "SOAP"
+    },
+    {
+      "source": "ACQUIRER_PROCESS_REST_081",
+      "target": "CARD_VALIDATION_SERVICE_082",
+      "callType": "gRPC"
+    },
+    {
+      "source": "CAMPAIGN_TRANSACTION_SERVICE_077",
+      "target": "EFT_DETAIL_CORE_083",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "CARD_VALIDATION_SERVICE_082",
+      "target": "DEPOSIT_STATUS_SOAP_084",
+      "callType": "SOAP"
+    },
+    {
+      "source": "REPORT_CONTROL_API_080",
+      "target": "CUSTOMER_QUERY_API_085",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "DEPOSIT_STATUS_SOAP_084",
+      "target": "PAYMENT_TRANSFER_REST_086",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "PAYMENT_TRANSFER_REST_086",
+      "target": "MERCHANT_TRANSACTION_SERVICE_087",
+      "callType": "gRPC"
+    },
+    {
+      "source": "MERCHANT_TRANSACTION_SERVICE_087",
+      "target": "ATM_INFO_CORE_088",
+      "callType": "REST"
+    },
+    {
+      "source": "DEPOSIT_STATUS_SOAP_084",
+      "target": "MOBILE_MANAGEMENT_SOAP_089",
+      "callType": "SOAP"
+    },
+    {
+      "source": "EFT_DETAIL_CORE_083",
+      "target": "INTERNET_CONTROL_API_090",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "EFT_DETAIL_CORE_083",
+      "target": "FRAUD_PROCESS_REST_091",
+      "callType": "gRPC"
+    },
+    {
+      "source": "MERCHANT_TRANSACTION_SERVICE_087",
+      "target": "LIMIT_VALIDATION_SERVICE_092",
+      "callType": "gRPC"
+    },
+    {
+      "source": "ATM_INFO_CORE_088",
+      "target": "AUTH_DETAIL_CORE_093",
+      "callType": "REST"
+    },
+    {
+      "source": "MERCHANT_TRANSACTION_SERVICE_087",
+      "target": "NOTIFICATION_STATUS_SOAP_094",
+      "callType": "REST"
+    },
+    {
+      "source": "INTERNET_CONTROL_API_090",
+      "target": "ACCOUNT_QUERY_API_095",
+      "callType": "REST"
+    },
+    {
+      "source": "ATM_INFO_CORE_088",
+      "target": "LOAN_TRANSFER_REST_096",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "INTERNET_CONTROL_API_090",
+      "target": "CAMPAIGN_TRANSACTION_SERVICE_097",
+      "callType": "gRPC"
+    },
+    {
+      "source": "AUTH_DETAIL_CORE_093",
+      "target": "REWARD_INFO_CORE_098",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "REWARD_INFO_CORE_098",
+      "target": "SECURITY_MANAGEMENT_SOAP_099",
+      "callType": "SOAP"
+    },
+    {
+      "source": "NOTIFICATION_STATUS_SOAP_094",
+      "target": "REPORT_CONTROL_API_100",
+      "callType": "gRPC"
+    },
+    {
+      "source": "NOTIFICATION_STATUS_SOAP_074",
+      "target": "INTERNET_CONTROL_API_090",
+      "callType": "SOAP"
+    },
+    {
+      "source": "ACQUIRER_PROCESS_REST_061",
+      "target": "ACCOUNT_QUERY_API_075",
+      "callType": "SOAP"
+    },
+    {
+      "source": "AUTH_DETAIL_CORE_013",
+      "target": "CAMPAIGN_TRANSACTION_SERVICE_017",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "PAYMENT_TRANSFER_REST_046",
+      "target": "REPORT_CONTROL_API_060",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "REPORT_CONTROL_API_060",
+      "target": "CARD_VALIDATION_SERVICE_062",
+      "callType": "REST"
+    },
+    {
+      "source": "ATM_INFO_CORE_008",
+      "target": "ACQUIRER_PROCESS_REST_021",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "NOTIFICATION_STATUS_SOAP_014",
+      "target": "CARD_VALIDATION_SERVICE_022",
+      "callType": "SOAP"
+    },
+    {
+      "source": "CUSTOMER_QUERY_API_025",
+      "target": "EFT_DETAIL_CORE_043",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "REWARD_INFO_CORE_018",
+      "target": "LIMIT_VALIDATION_SERVICE_032",
+      "callType": "SOAP"
+    },
+    {
+      "source": "LOAN_TRANSFER_REST_036",
+      "target": "FRAUD_PROCESS_REST_051",
+      "callType": "SOAP"
+    },
+    {
+      "source": "INTERNET_CONTROL_API_010",
+      "target": "CUSTOMER_QUERY_API_025",
+      "callType": "gRPC"
+    },
+    {
+      "source": "AUTH_DETAIL_CORE_013",
+      "target": "ACCOUNT_QUERY_API_015",
+      "callType": "gRPC"
+    },
+    {
+      "source": "CARD_VALIDATION_SERVICE_002",
+      "target": "CUSTOMER_QUERY_API_005",
+      "callType": "SOAP"
+    },
+    {
+      "source": "CARD_VALIDATION_SERVICE_022",
+      "target": "LOAN_TRANSFER_REST_036",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "CARD_VALIDATION_SERVICE_062",
+      "target": "MOBILE_MANAGEMENT_SOAP_069",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "ATM_INFO_CORE_008",
+      "target": "NOTIFICATION_STATUS_SOAP_014",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "ACQUIRER_PROCESS_REST_001",
+      "target": "NOTIFICATION_STATUS_SOAP_014",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "SECURITY_MANAGEMENT_SOAP_059",
+      "target": "MOBILE_MANAGEMENT_SOAP_069",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "INTERNET_CONTROL_API_090",
+      "target": "SECURITY_MANAGEMENT_SOAP_099",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "REPORT_CONTROL_API_020",
+      "target": "MERCHANT_TRANSACTION_SERVICE_027",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "ATM_INFO_CORE_028",
+      "target": "INTERNET_CONTROL_API_030",
+      "callType": "gRPC"
+    },
+    {
+      "source": "ACCOUNT_QUERY_API_095",
+      "target": "REPORT_CONTROL_API_100",
+      "callType": "REST"
+    },
+    {
+      "source": "ACQUIRER_PROCESS_REST_041",
+      "target": "EFT_DETAIL_CORE_043",
+      "callType": "REST"
+    },
+    {
+      "source": "ACCOUNT_QUERY_API_075",
+      "target": "FRAUD_PROCESS_REST_091",
+      "callType": "gRPC"
+    },
+    {
+      "source": "ATM_INFO_CORE_068",
+      "target": "NOTIFICATION_STATUS_SOAP_074",
+      "callType": "REST"
+    },
+    {
+      "source": "PAYMENT_TRANSFER_REST_066",
+      "target": "MOBILE_MANAGEMENT_SOAP_069",
+      "callType": "SOAP"
+    },
+    {
+      "source": "MOBILE_MANAGEMENT_SOAP_009",
+      "target": "MOBILE_MANAGEMENT_SOAP_029",
+      "callType": "REST"
+    },
+    {
+      "source": "MERCHANT_TRANSACTION_SERVICE_087",
+      "target": "FRAUD_PROCESS_REST_091",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "LOAN_TRANSFER_REST_016",
+      "target": "ACCOUNT_QUERY_API_035",
+      "callType": "SOAP"
+    },
+    {
+      "source": "ACCOUNT_QUERY_API_075",
+      "target": "ACCOUNT_QUERY_API_095",
+      "callType": "REST"
+    },
+    {
+      "source": "REPORT_CONTROL_API_080",
+      "target": "EFT_DETAIL_CORE_083",
+      "callType": "LOCAL REST"
+    },
+    {
+      "source": "CUSTOMER_QUERY_API_085",
+      "target": "ACCOUNT_QUERY_API_095",
+      "callType": "gRPC"
+    },
+    {
+      "source": "MERCHANT_TRANSACTION_SERVICE_067",
+      "target": "REWARD_INFO_CORE_078",
+      "callType": "NORMAL"
+    },
+    {
+      "source": "MERCHANT_TRANSACTION_SERVICE_027",
+      "target": "REWARD_INFO_CORE_038",
+      "callType": "SOAP"
+    },
+    {
+      "source": "NOTIFICATION_STATUS_SOAP_034",
+      "target": "MERCHANT_TRANSACTION_SERVICE_047",
+      "callType": "SOAP"
+    },
+    {
+      "source": "PAYMENT_TRANSFER_REST_086",
+      "target": "CAMPAIGN_TRANSACTION_SERVICE_097",
+      "callType": "NORMAL"
+    }
+  ],
+  "dependencies": [
+    "ACQUIRER-VIRTUALPOS",
+    "CARD-CUSTOMER",
+    "EFT-MOBIL",
+    "DEPOSIT-COMMON",
+    "CUSTOMER-PROFILE",
+    "PAYMENT-CORE",
+    "MERCHANT-MANAGEMENT",
+    "ATM-CORE",
+    "MOBILE-BANKING",
+    "INTERNET-BANKING",
+    "FRAUD-DETECTION",
+    "LIMIT-MANAGEMENT",
+    "AUTHORIZATION",
+    "NOTIFICATION-CENTER",
+    "ACCOUNT-MANAGEMENT",
+    "LOAN-MANAGEMENT",
+    "CAMPAIGN-ENGINE",
+    "REWARD-PLATFORM",
+    "SECURITY-SERVICES",
+    "REPORTING-PLATFORM"
+  ]
+}

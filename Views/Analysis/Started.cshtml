@@ -1,0 +1,32 @@
+@model AnalysisJob
+<section class="empty-state job-status" role="status">
+    @if (Model.State == "Failed")
+    {
+        <h1>Analiz tamamlanamadı.</h1><p>Lütfen tekrar deneyin veya destek ekibiyle iletişime geçin.</p>
+    }
+    else
+    {
+        <span class="success-mark" aria-hidden="true">✓</span>
+        <h1>@(Model.State == "Completed" ? "Analiz tamamlandı." : "Analiz başlatıldı.")</h1>
+        @if (Model.EmailState == "Sent")
+        {
+            <p>Sonuç e-postası <strong>@Model.Request.Email</strong> adresine gönderilmek üzere SMTP sunucusuna iletildi.</p>
+        }
+        else if (Model.EmailState == "Prepared")
+        {
+            <p><strong>@Model.Request.Email</strong> için sonuç e-postası test dosyası olarak hazırlandı.</p>
+        }
+        else
+        {
+            <p>Analiz tamamlandığında sonuçlar <strong>@Model.Request.Email</strong> adresine e-posta ile gönderilecek.</p>
+        }
+        @if (ViewData["IsPickup"] is true)
+        {
+            <p class="delivery-note">Test modu: E-posta dışarıya gönderilmez; yerel .eml dosyası olarak hazırlanır.</p>
+        }
+        @if (Model.EmailState == "Failed") { <p class="error">Sonuç hazır, ancak e-posta gönderilemedi. Sonucu aşağıdaki bağlantıdan açabilirsiniz.</p> }
+        <p>Analiz ID: <code>@Model.Id</code></p>
+        <a class="status-link" asp-action="Analyze" asp-route-id="@Model.Id">Analiz durumunu / sonuçlarını görüntüle →</a>
+    }
+    <a asp-action="Index">Yeni analiz</a>
+</section>
