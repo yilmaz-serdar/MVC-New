@@ -29,6 +29,12 @@
     const visibleEdges = new Set();
     return {
       initial: seeds,
+      expandAll() {
+        const additions = [...nodes.filter(node => !visibleNodes.has(node.data.id)), ...edges.filter(edge => !visibleEdges.has(edge.data.id))];
+        nodes.forEach(node => visibleNodes.add(node.data.id));
+        edges.forEach(edge => visibleEdges.add(edge.data.id));
+        return additions;
+      },
       expand(id) {
         if (!visibleNodes.has(id)) return [];
         const addedNodes = [], addedEdges = [];

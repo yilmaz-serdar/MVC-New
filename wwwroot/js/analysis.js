@@ -2,6 +2,7 @@
 
 (() => {
   const form = document.querySelector('#analysis-form');
+  const submitLabel = form?.querySelector('[type="submit"] span')?.textContent;
   form?.addEventListener('submit', () => {
     if (!form.checkValidity()) return;
     const button = form.querySelector('[type="submit"]');
@@ -10,7 +11,7 @@
   });
   window.addEventListener('pageshow', () => {
     const button = form?.querySelector('[type="submit"]');
-    if (button) { button.disabled = false; button.querySelector('span').textContent = 'Analiz Et'; }
+    if (button) { button.disabled = false; button.querySelector('span').textContent = submitLabel; }
   });
   const container = document.querySelector('#cy-topology');
   if (!container) return;
@@ -30,6 +31,7 @@
     error.textContent = 'Topoloji yüklenemedi. Bağlantıları aşağıdaki metin görünümünden inceleyebilirsiniz.';
     error.hidden = false;
     controls.forEach(button => { button.disabled = true; });
+    document.querySelector('#expand-all').disabled = true;
     return;
   }
   document.querySelectorAll('[data-call-type]').forEach(item => {
@@ -61,6 +63,13 @@
     clearSelection(); event.target.select(); describe(event.target);
   });
   cy.on('tap', event => { if (event.target === cy) clearSelection(); });
+  document.querySelector('#expand-all').addEventListener('click', () => {
+    cy.add(explorer.expandAll());
+    clearSelection();
+    cy.layout(TopologyGraph.layout()).run();
+    cy.fit(undefined, 40);
+    document.querySelector('#graph-status').textContent = `${cy.nodes().length} servis ve ${cy.edges().length} bağlantı gösteriliyor.`;
+  });
   detail.querySelector('button').addEventListener('click', () => { clearSelection(); container.focus(); });
   function refreshZoom() {
     const percent = cy.zoom() * 100;

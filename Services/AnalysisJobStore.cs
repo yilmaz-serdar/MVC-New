@@ -35,6 +35,18 @@ public sealed class AnalysisJobStore
         }
         finally { _gate.Release(); }
     }
+    public async Task<IReadOnlyList<AnalysisJob>> HistoryAsync(string? serviceName, CancellationToken cancellationToken)
+    {
+        var jobs = new List<AnalysisJob>();
+        foreach (var id in Ids())
+        {
+            var job = await GetAsync(id, cancellationToken);
+            if (job?.State == "Completed" && job.Result is not null &&
+                (string.IsNullOrWhiteSpace(serviceName) || string.Equals(job.Request.ServiceName.Trim(), serviceName.Trim(), StringComparison.OrdinalIgnoreCase)))
+                jobs.Add(job);
+        }
+        return jobs.OrderByDescending(job => job.CreatedAt).ToArray();
+    }
     public IEnumerable<Guid> Ids() => Directory.EnumerateFiles(_directory, "*.json")
         .Select(Path.GetFileNameWithoutExtension).Where(name => Guid.TryParse(name, out _)).Select(name => Guid.Parse(name!)).ToArray();
 }

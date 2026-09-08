@@ -101,7 +101,12 @@
             </div>
             <span class="step">01 <span>/ ANALİZ PARAMETRELERİ</span></span>
           </div>
+          @if (ViewData["ExistingAnalysis"] is true)
+          {
+              <p class="history-notice" role="status">Bu servis daha önce analiz edilmiş. Önceki sonuçları aşağıdan açabilir veya yeni bir analiz başlatabilirsiniz.</p>
+          }
           <form id="analysis-form" asp-controller="Analysis" asp-action="Analyze" method="post">
+            @if (ViewData["ExistingAnalysis"] is true) { <input type="hidden" name="force" value="true" /> }
             <div class="field service-field">
               <label for="service">Servis Adı <span>*</span></label>
               <div class="input-wrap">
@@ -157,7 +162,7 @@
                 aria-hidden="true"
               >
                 <path d="M2 12h4l3-9 6 18 3-9h4" /></svg
-              ><span>Analiz Et</span
+              ><span>@(ViewData["ExistingAnalysis"] is true ? "Yeniden Analiz Et" : "Analiz Et")</span
               ><svg
                 width="18"
                 height="18"
@@ -195,6 +200,7 @@
           </div>
         </section>
         
+<partial name="_History" model="Model.History" />
 @if (Model.Result is not null)
 {
     <partial name="_Results" model="Model.Result" />

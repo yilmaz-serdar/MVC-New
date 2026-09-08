@@ -1188,3 +1188,18 @@ footer a { color:#bd2033; text-decoration:underline; }
 @media(max-width:1100px) { .form-card form { grid-template-columns:1fr 1fr; } .service-field { grid-column:auto; } }
 @media(max-width:600px) { .form-card form { grid-template-columns:1fr; } .analyze-button { margin-top:0; } .job-status code { overflow-wrap:anywhere; } }
 
+.analysis-history { margin: 24px 0; padding: 24px; }
+.analysis-history h2 { font-size: 20px; margin: 0 0 8px; }
+.analysis-history > p { color: #697386; font-size: 13px; margin-bottom: 20px; }
+.analysis-history table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
+.analysis-history th, .analysis-history td { padding: 14px 12px; border-bottom: 1px solid #edf0f4; vertical-align: middle; }
+.analysis-history th { background: #f8f9fb; white-space: nowrap; }
+.analysis-history td { overflow-wrap: anywhere; min-width: 120px; }
+.history-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.history-actions a { color: #d71920; white-space: nowrap; }
+.history-actions button, .graph-shortcuts button { background: white; color: #c8102e; border: 1px solid #e3c4c9; border-radius: 8px; padding: 10px 14px; cursor: pointer; font: inherit; white-space: nowrap; }
+.history-actions button:hover, .graph-shortcuts button:hover { background: #fff0f2; }
+.history-notice { padding: 14px; background: #fff4f4; border-radius: 8px; margin: 12px 0; }
+.graph-shortcuts { padding: 12px 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 12px; }
+.graph-shortcuts button:disabled { opacity: .5; cursor: default; }
+@media(max-width:600px) { .analysis-history { padding: 16px; } .graph-shortcuts button { white-space: normal; width: 100%; } }

@@ -83,3 +83,16 @@ oluşturur; SMTP modunda çalıştırılmamalıdır. Tarayıcıda görsel test y
 
 Yayın: `dotnet publish -c Release -o publish`. .NET 7 hedefi önceki isteğe uygun
 korunmuştur; SDK destek süresi uyarısı verebilir.
+
+## Analiz geçmişi ve tüm topoloji
+
+Ana sayfada tamamlanan analizler en yeniden eskiye listelenir. Tarih (Türkiye saati),
+servis adı, süre, e-posta adresi ve sonuç bağlantısı gösterilir. Aynı servis normal
+Analiz Et ile gönderildiğinde yeni iş oluşturulmadan geçmişi gösterilir. Yeniden
+Analiz Et açıkça yeni iş oluşturur; tablodaki düğme satırın parametrelerini kullanır.
+Sonuç sayfasındaki geçmiş yalnızca ilgili servisi içerir.
+
+Topolojide Tüm Düğümleri ve Bağlantıları Göster düğmesi tüm grafiği açıp ekrana
+sığdırır. Kısmen açılmış grafikte de çalışır ve tekrar tıklamak öğeleri çoğaltmaz.
+Header etiketi Analiz Ortamı: PROD olarak güncellenmiştir; bu görsel etiket veri
+sağlayıcısını veya e-posta yapılandırmasını değiştirmez.

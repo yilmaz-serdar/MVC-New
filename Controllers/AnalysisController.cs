@@ -13,16 +13,22 @@ public sealed class AnalysisController : Controller
     { _store = store; _sender = sender; }
 
     [HttpGet]
-    public IActionResult Index() => View(new AnalysisPageViewModel
-    { Request = new AnalysisRequest { ServiceName = "ACQUIRER_PROCESS_REST_001", Days = 1 } });
+    public async Task<IActionResult> Index(CancellationToken cancellationToken) => View(new AnalysisPageViewModel
+    { Request = new AnalysisRequest { ServiceName = "ACQUIRER_PROCESS_REST_001", Days = 1 }, History = await _store.HistoryAsync(null, cancellationToken) });
 
     [HttpPost, ValidateAntiForgeryToken]
-    public async Task<IActionResult> Analyze([Bind(Prefix = "Request")] AnalysisRequest request, CancellationToken cancellationToken)
+    public async Task<IActionResult> Analyze([Bind(Prefix = "Request")] AnalysisRequest request, CancellationToken cancellationToken, bool force = false)
     {
         if (!ModelState.IsValid)
         {
             Response.StatusCode = StatusCodes.Status400BadRequest;
-            return View("Index", new AnalysisPageViewModel { Request = request });
+            return View("Index", new AnalysisPageViewModel { Request = request, History = await _store.HistoryAsync(request.ServiceName, cancellationToken) });
+        }
+        var history = await _store.HistoryAsync(request.ServiceName, cancellationToken);
+        if (!force && history.Count > 0)
+        {
+            ViewData["ExistingAnalysis"] = true;
+            return View("Index", new AnalysisPageViewModel { Request = request, History = history });
         }
         var job = new AnalysisJob { Request = request };
         await _store.SaveAsync(job, cancellationToken);
@@ -38,7 +44,7 @@ public sealed class AnalysisController : Controller
         if (job is null) return NotFound("Analiz bulunamadı.");
         if (job.State != "Completed" || job.Result is null) return StatusView(job);
         ViewData["EmailState"] = job.EmailState;
-        return View("Index", new AnalysisPageViewModel { Request = job.Request, Result = job.Result });
+        return View("Index", new AnalysisPageViewModel { Request = job.Request, Result = job.Result, History = await _store.HistoryAsync(job.Request.ServiceName, cancellationToken) });
     }
 
     [HttpGet]

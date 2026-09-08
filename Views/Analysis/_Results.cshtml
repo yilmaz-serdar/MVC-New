@@ -43,6 +43,7 @@
                 <script type="application/json" id="topology-data">@Json.Serialize(topology)</script>
                 <div id="cy-topology" data-service-name="@Model.ServiceName" role="region" tabindex="0" aria-label="Servis topolojisi. Yakınlaştırmak için artı/eksi, kaydırmak için ok tuşlarını kullanın. Metin görünümü aşağıdadır."></div>
                 <p id="graph-error" class="error" role="alert" hidden></p>
+                <div class="graph-shortcuts"><button type="button" id="expand-all">Tüm Düğümleri ve Bağlantıları Göster</button><span id="graph-status" role="status"></span></div>
                 <div class="graph-footer"><span>Bir servis veya bağlantı seçin</span><div class="zoom-controls"><button type="button" data-zoom="out" aria-label="Uzaklaştır">−</button><span>100%</span><button type="button" data-zoom="in" aria-label="Yakınlaştır">+</button><i></i><button type="button" data-zoom="fit" aria-label="Haritayı ekrana sığdır">⛶</button></div></div>
                 <div class="graph-selection" hidden aria-live="polite"><div><strong></strong><p></p></div><button type="button" aria-label="Seçimi temizle">×</button></div>
                 <noscript><p class="project-tip">Grafik için JavaScript gerekir. Tüm bağlantılar aşağıdaki metin görünümünde yer alır.</p></noscript>

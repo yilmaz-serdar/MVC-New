@@ -10,7 +10,7 @@ const dataDir=path.join(__dirname,'../App_Data');
   assert.ok(!html.includes('class="eyebrow"'));
   const token=html.match(/<input[^>]*name="__RequestVerificationToken"[^>]*>/)[0].match(/value="([^"]+)"/)[1];
   const cookie=initial.headers.getSetCookie().map(x=>x.split(';')[0]).join('; ');
-  async function post(email,days=1,csrf=true){const body=new URLSearchParams({'Request.ServiceName':'ACQUIRER_PROCESS_REST_001','Request.Days':String(days),'Request.Email':email});if(csrf)body.set('__RequestVerificationToken',token);return fetch(base+'/Analysis/Analyze',{method:'POST',headers:{Cookie:cookie},body,redirect:'manual'});}
+  async function post(email,days=1,csrf=true,force=true){const body=new URLSearchParams({'Request.ServiceName':'ACQUIRER_PROCESS_REST_001','Request.Days':String(days),'Request.Email':email});body.set('force',String(force));if(csrf)body.set('__RequestVerificationToken',token);return fetch(base+'/Analysis/Analyze',{method:'POST',headers:{Cookie:cookie},body,redirect:'manual'});}
   for(const email of ['', 'invalid', 'a\nb@example.com']) assert.equal((await post(email)).status,400);
   assert.equal((await post('test@example.invalid',2)).status,400);
   assert.equal((await post('test@example.invalid',1,false)).status,400);
@@ -27,6 +27,9 @@ const dataDir=path.join(__dirname,'../App_Data');
   const topology=JSON.parse(result.match(/id="topology-data">([\s\S]*?)<\/script>/)[1]);
   assert.equal(topology.nodes.length,100);assert.equal(topology.edges.length,135);
   assert.equal((await fetch(base+'/Analysis/Analyze?id='+id)).status,200);
+  assert.ok(result.includes('id="expand-all"'));
+  const prior=await post('test@example.invalid',1,true,false); assert.equal(prior.status,200);
+  const priorHtml=await prior.text(); assert.ok(priorHtml.includes('id="history-heading"')); assert.ok(priorHtml.includes('/Analysis/Analyze/'+id));
   const storedPath=path.join(dataDir,'Jobs',id.replaceAll('-','')+'.json');
   let job;
   for(let i=0;i<20;i++){job=JSON.parse(fs.readFileSync(storedPath,'utf8'));if(job.EmailState==='Prepared')break;await new Promise(resolve=>setTimeout(resolve,300));}
@@ -35,3 +38,4 @@ const dataDir=path.join(__dirname,'../App_Data');
   assert.equal((await fetch(base+'/App_Data/Jobs/'+id.replaceAll('-','')+'.json')).status,404);
   console.log('PASS: email validation, accepted-job redirect, ID/query routes, background completion, persisted results, pickup email, anti-forgery and private job files. ID='+id);
 })();
+
