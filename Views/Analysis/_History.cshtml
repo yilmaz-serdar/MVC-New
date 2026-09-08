@@ -14,13 +14,6 @@
                     <td>@job.Request.ServiceName</td><td>Son @job.Request.Days gün</td><td>@job.Request.Email</td>
                     <td><div class="history-actions">
                         <a asp-action="Analyze" asp-route-id="@job.Id">Sonuçları Gör</a>
-                        <form asp-action="Analyze" method="post">
-                            <input type="hidden" name="Request.ServiceName" value="@job.Request.ServiceName" />
-                            <input type="hidden" name="Request.Days" value="@job.Request.Days" />
-                            <input type="hidden" name="Request.Email" value="@job.Request.Email" />
-                            <input type="hidden" name="force" value="true" />
-                            <button type="submit">Yeniden Analiz Et</button>
-                        </form>
                     </div></td>
                 </tr>
             }

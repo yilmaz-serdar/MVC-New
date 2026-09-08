@@ -89,10 +89,12 @@ korunmuştur; SDK destek süresi uyarısı verebilir.
 Ana sayfada tamamlanan analizler en yeniden eskiye listelenir. Tarih (Türkiye saati),
 servis adı, süre, e-posta adresi ve sonuç bağlantısı gösterilir. Aynı servis normal
 Analiz Et ile gönderildiğinde yeni iş oluşturulmadan geçmişi gösterilir. Yeniden
-Analiz Et açıkça yeni iş oluşturur; tablodaki düğme satırın parametrelerini kullanır.
+Analiz Et ana form üzerinden açıkça yeni iş oluşturur. Tablonun İşlemler kolonunda yalnızca Sonuçları Gör düğmesi bulunur.
 Sonuç sayfasındaki geçmiş yalnızca ilgili servisi içerir.
 
 Topolojide Tüm Düğümleri ve Bağlantıları Göster düğmesi tüm grafiği açıp ekrana
 sığdırır. Kısmen açılmış grafikte de çalışır ve tekrar tıklamak öğeleri çoğaltmaz.
 Header etiketi Analiz Ortamı: PROD olarak güncellenmiştir; bu görsel etiket veri
 sağlayıcısını veya e-posta yapılandırmasını değiştirmez.
+
+Sayfa ve kaynakları yüklenene kadar tam ekran yükleme göstergesi görünür; load olayı ile kapanır. JavaScript kapalıysa içerik doğrudan görünür.

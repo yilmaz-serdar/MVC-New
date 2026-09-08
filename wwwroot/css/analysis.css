@@ -1203,3 +1203,6 @@ footer a { color:#bd2033; text-decoration:underline; }
 .graph-shortcuts { padding: 12px 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 12px; }
 .graph-shortcuts button:disabled { opacity: .5; cursor: default; }
 @media(max-width:600px) { .analysis-history { padding: 16px; } .graph-shortcuts button { white-space: normal; width: 100%; } }
+.history-actions a { display: inline-flex; align-items: center; justify-content: center; padding: 10px 14px; border: 1px solid #e3c4c9; border-radius: 8px; text-decoration: none; background: white; }
+.history-actions a:hover { background: #fff0f2; }
+.history-actions a:focus-visible { outline: 2px solid #c8102e; outline-offset: 3px; }
